@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link type="image/png" sizes="16x16" rel="icon" href="./src/img/icons8-localização-32.png">
+    <title>Consulta de CEP</title>
+    <link rel="stylesheet" href="./src/css/styles.css" />
+  </head>
+  <body>
+    <h1>Consulta de CEP</h1>
+    <input type="text" id="cepInput" placeholder="Digite um CEP" />
+    <button onclick="adicionarCEP()">Consultar</button>
+
+    <div id="cepsAdicionados"></div>
+    <div id="resultado"></div>
+    <div id="map"></div>
+
+    <script src="./src/js/script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-Cg7zsqcVAtEbuGKSuCMgSERIu8YPz74&libraries=places&callback=inicializarMapa"></script>
+  </body>
+</html>

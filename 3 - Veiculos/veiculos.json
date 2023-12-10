@@ -1,0 +1,26 @@
+{
+  "vehicles": [
+    {
+      "type": "Carro",
+      "model": "Sedan",
+      "year": 2022,
+      "brand": "Marca A",
+      "doors": 4
+    },
+    {
+      "type": "Moto",
+      "model": "Esportiva",
+      "year": 2021,
+      "brand": "Marca B",
+      "passengers": 2,
+      "wheels": 2
+    },
+    {
+      "type": "Carro",
+      "model": "Hatch",
+      "year": 2020,
+      "brand": "Marca C",
+      "doors": 5
+    }
+  ]
+}

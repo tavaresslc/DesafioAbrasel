@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      type="image/png"
+      sizes="16x16"
+      rel="icon"
+      href="./src/img/icons8-estacionamento-32.png"
+    />
+    <link rel="stylesheet" href="./src/css/styles.css" />
+    <title>Gestão de Veículos</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Gestão de Veículos</h1>
+      <form id="vehicleForm">
+        <label for="vehicleType">Tipo de Veículo:</label>
+        <select id="vehicleType">
+          <option value="Carro">Carro</option>
+          <option value="Moto">Moto</option>
+        </select>
+        <div id="carFields" class="fields selected">
+          <label for="carModel">Modelo</label> <br />
+          <input type="text" id="carModel" placeholder="Modelo" /> <br />
+          <label for="carYear">Ano de Fabricação</label> <br />
+          <input
+            type="number"
+            id="carYear"
+            placeholder="Ano"
+            min="1"
+            max="2023"
+            oninput="limitNumber(this)"
+          />
+          <br />
+          <label for="carBrand">Marca</label> <br />
+          <input type="text" id="carBrand" placeholder="Marca" />
+          <label for="carDoors">Quantidade de Portas</label> <br />
+          <input
+            type="number"
+            id="carDoors"
+            placeholder="Qtd"
+            min="2"
+            max="4"
+            oninput="limitNumber(this)"
+          />
+          <br />
+        </div>
+        <div id="motorcycleFields" class="fields">
+          <label for="motoModel">Modelo</label>
+          <input type="text" id="motoModel" placeholder="Modelo" /> <br />
+          <label for="motoYear">Ano de Fabricação</label>
+          <input
+            type="number"
+            id="motoYear"
+            placeholder="Ano"
+            min="1"
+            max="2023"
+            oninput="limitNumber(this)"
+          />
+          <br />
+          <label for="motoBrand">Marca</label>
+          <input type="text" id="motoBrand" placeholder="Marca" /> <br />
+          <label for="motoPassengers">Número de Passageiros</label>
+          <input
+            type="number"
+            id="motoPassengers"
+            placeholder="Nmr"
+            min="1"
+            max="2"
+            oninput="limitNumber(this)"
+          />
+        </div>
+        <button type="submit" id="submit">Adicionar Veículo</button>
+      </form>
+      <div id="vehicleList"></div>
+    </div>
+    <script src="./src/js/script.js"></script>
+  </body>
+</html>

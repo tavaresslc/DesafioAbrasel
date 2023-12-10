@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to bottom, #eee, darkblue);
+  font-family: "Roboto", Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 40px;
+  color: dark;
+  user-select: none;
+}
+
+td {
+  font-size: 16px;
+}
+
+p {
+  user-select: none;
+}
+
+label {
+  user-select: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  background: #fff;
+  border-radius: 4px;
+  padding: 20px;
+  margin: 32px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+select {
+  margin-bottom: 20px;
+  margin-top: 8px;
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 4px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+label {
+  font-size: 16px;
+  color: #444;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  margin-bottom: 16px;
+  margin-top: 8px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #999;
+  padding: 4px;
+  font-size: 12px;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-radius: none;
+}
+
+button {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  background: #069;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #057;
+}
+
+#submit {
+  margin-top: 4px;
+  margin-bottom: 0;
+}
+
+.delete-button {
+  width: 100%;
+  height: auto;
+  max-width: 26px;
+  max-height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#vehicleList {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: #fff;
+  border-radius: 4px;
+  padding: 32px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.vehicle-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  padding: 16px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.fields {
+  display: none;
+}
+
+.fields.selected {
+  display: block;
+}
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  .vehicle-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .delete-button {
+    margin-top: 8px;
+    width: 48px;
+    max-width: 100%;
+  }
+}

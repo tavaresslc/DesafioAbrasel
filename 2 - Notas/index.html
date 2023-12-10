@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      type="image/png"
+      sizes="16x16"
+      rel="icon"
+      href="./src/img/icons8-banco-32.png"
+    />
+    <link rel="stylesheet" href="./src/css/styles.css" />
+    <title>Calculadora de Troco</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Calculadora de Troco</h1>
+      <label for="purchaseAmount">Valor da compra:</label>
+      <input type="number" id="purchaseAmount" />
+      <label for="amountPaid">Valor entregue:</label>
+      <input type="number" id="amountPaid" />
+      <button onclick="calculateChange()">Calcular Troco</button>
+      <div id="changeResult" style="display: none">
+        <h2>Resultado:</h2>
+        <p>Valor da compra: <span id="resultPurchaseAmount"></span></p>
+        <p>Valor do troco: <span id="changeAmount"></span></p>
+        <p>Notas de 100: <span id="notes100"></span></p>
+        <p>Notas de 10: <span id="notes10"></span></p>
+        <p>Notas de 1: <span id="notes1"></span></p>
+      </div>
+    </div>
+
+    <script src="./src/js/script.js"></script>
+  </body>
+</html>

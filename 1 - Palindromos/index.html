@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      type="image/png"
+      sizes="16x16"
+      rel="icon"
+      href="./src/img/icons8-calculadora-32.png"
+    />
+    <link rel="stylesheet" href="./src/css/styles.css" />
+    <title>Encontrar Números Palíndromos</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Encontrar Números Palíndromos</h1>
+      <label for="startRange">Intervalo de:</label>
+      <input type="number" id="startRange" placeholder="Início" />
+      <label for="endRange"> até </label>
+      <input type="number" id="endRange" placeholder="Fim" />
+      <button onclick="findPalindromes()">Buscar Palíndromos</button>
+      <div id="result"></div>
+    </div>
+    <script src="./src/js/script.js"></script>
+  </body>
+</html>

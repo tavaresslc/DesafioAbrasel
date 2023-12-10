@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      type="image/png"
+      sizes="16x16"
+      rel="icon"
+      href="https://img.icons8.com/fluency/48/goal--v1.png"
+    />
+    <title>DESAFIO ABRASEL</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #f5f5f5;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .container {
+      width: 100%;
+      height: 94vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .desc {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .desc h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      user-select: none;
+    }
+    .desc p {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      user-select: none;
+    }
+    .desc p strong {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      user-select: none;
+    }
+    .desc a {
+      color: #000;
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+    .challenges {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .challenges ul {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .challenges ul a {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      color: #000;
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+    }
+    .challenges ul a:hover {
+      color: #fff;
+      background-color: #000;
+      transition: 0.5s;
+    }
+    .challenges ul a img {
+      margin-left: 0.5rem;
+    }
+    @media (max-width: 400px) {
+      .desc h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+      }
+      .desc p {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+      }
+      .desc p strong {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+      }
+      .desc a {
+        color: #000;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+      }
+      .challenges ul a {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: #000;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+      }
+      .challenges ul a:hover {
+        color: #fff;
+        background-color: #000;
+        transition: 0.5s;
+      }
+      .challenges ul a img {
+        margin-left: 0.5rem;
+      }
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="desc">
+        <h1>DESAFIO ABRASEL</h1>
+        <p>Desenvolvido por: <strong><a href="https://www.linkedin.com/in/tavaresslc/">Lucas Soares Tavares</a></strong></p>
+        <p>Desenvolvido em: <strong>HTML, CSS, JS</strong></p>
+        <a href="https://github.com/tavaresslc/DesafioAbrasel"
+          >Projeto no Github</a
+        >
+      </div>
+      <div class="challenges">
+        <ul>
+          <a href="/1 - Palindromos/index.html"
+            >1. Palindromos
+            <img
+              src="/1 - Palindromos/src/img/icons8-calculadora-32.png"
+              alt="calc-icon"
+          /></a>
+          <a href="/2 - Notas/index.html"
+            >2. Notas
+            <img src="/2 - Notas/src/img/icons8-banco-32.png" alt="bank-icon"
+          /></a>
+          <a href="/3 - Veiculos/index.html"
+            >3. Veiculos
+            <img
+              src="/3 - Veiculos/src/img/icons8-estacionamento-32.png"
+              alt="park-icon"
+          /></a>
+          <a href="/4 - CEPs/index.html"
+            >4. CEPs
+            <img
+              src="/4 - CEPs/src/img/icons8-localização-32.png"
+              alt="loc-icon"
+          /></a>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
